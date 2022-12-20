@@ -1,16 +1,4 @@
-terraform {
-  required_providers {
-    azurerm = {
-      source  = "hashicorp/azurerm"
-      version = "3.36.0"
-    }
-  }
-
-  backend "remote" {
-    organization = "oguzhanaydogan"
-
-    workspaces {
-      name = "terraformcloud"
-    }
-  }
+resource "azurerm_resource_group" "example" {
+  name     = "example"
+  location = "West Europe"
 }
