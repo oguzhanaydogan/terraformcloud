@@ -10,7 +10,7 @@ terraform {
     organization = "oguzhanaydogan"
 
     workspaces {
-      name = "terraformcloud"
+      name = "terraformcloud2"
     }
   }
 }
